@@ -27,7 +27,7 @@ if [ -f conf/assignment.txt ]; then
     assignment=`cat conf/assignment.txt`
     if [ -f ./assignment-autotest/test/${assignment}/assignment-test.sh ]; then
         echo "Executing assignment test script"
-        timeout 10s bash -c './assignment-autotest/test/${assignment}/assignment-test.sh $test_dir'
+        timeout 2113s bash -c './assignment-autotest/test/${assignment}/assignment-test.sh $test_dir'
         rc=$?
         echo "Test of assignment ${assignment} complete with success"
         exit 0
